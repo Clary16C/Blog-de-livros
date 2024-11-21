@@ -1,0 +1,178 @@
+/* Estilos gerais */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+
+}
+
+html {
+    height: 420vh;
+    background-color: #f1eeee;
+} 
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 420vh; 
+    position: relative; 
+}
+
+/* Classes */
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Header */
+header {
+    width: 100%;
+    padding: 30px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+header.rolagem{
+    background-color: #636F62;
+    padding: 20px 4%;
+}
+
+header.rolagem a, header.rolagem i{
+    color: white;
+}
+
+/* Navegação */
+header a {
+    font-size: 30px;
+    color: black;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a {
+    color: #232325;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.btn-contato button {
+    width: 120px;
+    height: 40px;
+    border: 0;
+    background-color: #906F4E;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+}
+.btn-contato button:hover {
+    background-color: var(#896A4B);
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+/* banner */
+.banner {
+    height: 100vh;
+    background-image: url(imagens/fundo-T.jpg);
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner .texto-sobre {
+    text-align: center; 
+    background-color: #f1eeee; 
+    border-radius: 15px; 
+    padding: 100px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    margin: 20px auto 30px auto; 
+    width: 94%; 
+}
+
+.banner .texto-sobre h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #906F4E; /* Cor do título */
+}
+
+.banner .texto-sobre p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333; /* Cor do texto */
+}
+
+.content-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+
+.content-item {
+    text-align: center;
+}
+
+.content-item h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #906F4E; /* Cor do título */
+}
+
+/* Estiliza as imagens */
+.content-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px; /* Bordas arredondadas */
+}
+
+/* Estiliza o texto */
+.content-text {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Adiciona uma linha de divisão */
+.divider {
+    width: 100%;
+    height: 2px;
+    background-color: #ccc;
+    margin: 10px 0; /* Espaçamento acima e abaixo */
+}
+
+/* Footer */
+footer p {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%; 
+    background-color: #636F62;
+    padding: 10px 0;
+    font-size: 16px; 
+}
+

@@ -1,0 +1,167 @@
+/* Estilos gerais */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+
+}
+
+html {
+    height: 100vh;
+    background-color: #EEEFF1;
+} 
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Garante que o body ocupe a altura total da página */
+    position: relative; /* Define o contexto para posicionamento absoluto */
+}
+
+/* Classes */
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Header */
+header {
+    width: 100%;
+    padding: 30px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #636F62;
+
+}
+
+
+/* Navegação */
+header a {
+    font-size: 30px;
+    color: black;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a {
+    color: #232325;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.btn-contato button {
+    width: 120px;
+    height: 40px;
+    border: 0;
+    background-color: #906F4E;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+}
+.btn-contato button:hover {
+    background-color: var(#896A4B);
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+
+/* Container */
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+/* Main Content - Contato */
+.main-content.contato {
+    display: flex;
+    flex-direction: column; /* Alinha os itens verticalmente */
+    justify-content: center;
+    align-items: center; /* Centraliza horizontalmente */
+    padding: 40px;
+    margin-top: 150px; /* Espaço para não sobrepor o header */
+}
+
+.main-content.contato h2 {
+    font-size: 2rem;
+    color: #232325; /* Cor escura para o título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+/* Formulário */
+form {
+    background-color: #f9f9f9; /* Cor de fundo do formulário */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 100%;
+    max-width: 600px; /* Largura máxima do formulário */
+}
+
+form label {
+    font-size: 1rem;
+    color: #232325; /* Cor escura para o texto */
+    margin-bottom: 5px;
+    display: block;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%; /* Ocupa toda a largura do formulário */
+    padding: 12px;
+    margin-bottom: 20px; /* Espaço entre os campos */
+    border: 1px solid #ccc; /* Borda clara */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 1rem;
+}
+
+form textarea {
+    height: 120px; /* Tamanho maior para a área de texto */
+    resize: vertical; 
+}
+
+form input[type="submit"] {
+    background-color: #906F4E; /* Cor de fundo do botão */
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease; /* Transição suave para o hover */
+}
+
+form input[type="submit"]:hover {
+    background-color: #7A5E40; /* Cor de fundo mais escura ao passar o mouse */
+}
+
+/* Footer */
+footer p {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%; /* para ocupar a largura da página */
+    background-color: #636F62; /* Para destacar o fundo */
+    padding: 10px 0; /* espaçamento */
+    font-size: 16px; 
+}
+

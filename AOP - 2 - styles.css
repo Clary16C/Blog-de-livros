@@ -1,0 +1,355 @@
+/* Estilos gerais */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+
+}
+
+html {
+    height: 280vh; /* Tamanho da pagina */
+    background-color: #EEEFF1;
+} 
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 280vh; /* Garante que o body ocupe a altura total da página */
+    position: relative; 
+}
+
+/* Classes */
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Header */
+header {
+    width: 100%;
+    padding: 60px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+header.rolagem{
+    background-color: #636F62;
+    padding: 20px 4%;
+}
+
+header.rolagem a, header.rolagem i{
+    color: white;
+}
+
+/* Navegação */
+header a {
+    font-size: 30px;
+    color: black;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a {
+    color: #232325;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.btn-contato button {
+    width: 120px;
+    height: 40px;
+    border: 0;
+    background-color: #906F4E;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+}
+.btn-contato button:hover {
+    background-color: var(#896A4B);
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+/* Banner */
+.banner {
+    height: 100vh;
+    background-image: url(imagens/fundo-4k.jpg);
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h1 {
+    background-color: rgba(255, 255, 255, 0.7); /* Fundo translúcido */
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 4em;
+}
+
+.banner h1 span {
+    color: #636F62;
+}
+
+.h2 {
+    height: 100vh;
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.coluna .nova-coluna {
+    text-align: center; 
+    background-color: #f1eeee; 
+    border-radius: 15px; /* Bordas arredondadas */
+    padding: 100px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+    margin: 20px auto 30px auto; 
+    width: 94%; /* Largura da nova coluna */
+}
+
+.coluna .nova-coluna h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #906F4E; /* Cor do título */
+}
+
+.coluna .nova-coluna p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333; /* Cor do texto */
+}
+
+/* Coluna de texto */
+.menu-coluna {
+    display: flex;
+    justify-content: space-between; /* Para alinhar nas extremidades */
+    align-items: center; 
+    padding: 50px;
+    min-height: 400px; /*altura mínima */
+}
+
+.menu-coluna .content {
+    display: flex;
+    justify-content: space-between; /* Alinha nas extremidades */
+    gap: 40px; /* Espaçamento entre as colunas */
+}
+
+.menu-coluna .coluna {
+    background-color: #f1eeee;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 48%; 
+    height: 400px;
+}
+
+.menu-coluna h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #906F4E;
+}
+
+.menu-coluna p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/*coluna da imagem*/
+.image-column {
+    width: 48%; /* Largura da coluna da imagem */
+    height: 400px;
+    top: 50%; /* Altura da coluna */
+}
+
+.image-column img {
+    width: 100%; 
+    height: 100%; 
+    border-radius: 15px; 
+    object-fit: cover; /* Para que a imagem preencha o espaço da coluna */
+}
+
+/* Seções específicas */
+.texto-sobre {
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.texto-sobre h1 {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    font-size: 35px;
+    color: black;
+    position: relative;
+    top: 10px;
+    margin-top: 80px;
+}
+
+.texto-sobre p {
+    width: 50%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.recomendações, .blog, .contato {
+    height: 100vh;
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content {
+    height: 100vh;
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.texto-sobre {
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.titulo-recomendações {
+    color: #906F4E;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding-left: 20px;
+}
+
+/*Scroll horizontal*/
+/* Wrapper para esconder a barra de rolagem mas permitir rolagem manual */
+.recomendacoes-wrapper {
+    width: 100%;
+    overflow-x: scroll; /* Permite rolagem horizontal manual */
+    overflow-y: hidden; 
+    position: relative;
+}
+
+/* Container que contém as recomendações */
+.recomendacoes-container {
+    display: flex;
+    width: max-content;
+    animation: scroll 30s linear infinite; /* Animação de rolagem infinita */
+}
+
+/* Quando o mouse passar sobre o wrapper, pausa a rolagem */
+.recomendacoes-wrapper:hover .recomendacoes-container {
+    animation-play-state: paused;
+}
+
+/* Estilo das recomendações */
+.recomendacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px; /* Largura de cada recomendação */
+    margin-right: 30px; /* Espaço entre as recomendações */
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+}
+
+/* Aumenta o item quando o mouse passa por cima */
+.recomendacao:hover {
+    transform: scale(1.1);
+    width: 210px;
+}
+
+/* Estilo da imagem dentro de cada recomendação */
+.recomendacao img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Texto de cada recomendação */
+.recomendacao p {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Animação de rolagem contínua */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); 
+    }
+}
+
+/* Escondendo a barra de rolagem visualmente mas permitindo a rolagem manual */
+.recomendacoes-wrapper {
+    scrollbar-width: none; /* Para Firefox */
+    -ms-overflow-style: none; /* Para Internet Explorer */
+}
+
+.recomendacoes-wrapper::-webkit-scrollbar {
+    display: none; /* Para navegadores Chrome, Safari, Opera */
+}
+
+/* Footer */
+footer p {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%; /* Para ocupar a largura da página */
+    background-color: #636F62; /* Destacar o fundo */
+    padding: 10px 0; 
+    font-size: 16px; 
+}
+
